@@ -4,8 +4,7 @@ from scipy.special import gamma
 
 class CostFunction:
     """
-    CostFunction is a class implementing the objective function. Currently supports only the neg_log_likelihood()
-    function and uses the methods ln(A1) through ln(A4) as given in the assignment Ex 3.
+    CostFunction is a class implementing the objective function.
     """
 
     def __init__(self, features):
@@ -29,7 +28,6 @@ class CostFunction:
         The function computing the negative log likelihood function as given.
         :param features: pandas DataFrame
         :param params: a list of function parameters [r,alpha,a,b]
-        :param norm_factor: normalization factor requested in Ex 4 for normalizing alpha parameter
         :return: float or inf if any of the parameters is negative
         :raise exception if length of parameters list ig greater than 4
         """
